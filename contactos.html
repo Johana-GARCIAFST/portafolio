@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,52 @@
     <title>contactos</title>
 
 </head>
+
 <body>
     <header>
         <h1>
             <picture>
-                    <a href="index.html"> <img src="./img/logodeveloper.png" alt="logo"> </a>
+                <a href="index.html"> <img src="./img/logodeveloper.png" alt="logo"> </a>
             </picture>
         </h1>
         <nav>
             <ul>
-                <li > <a href="./portafolio.html">Portafolio</a> </li>
-                <li > <a href="./acercademi.html">A cerca de mi</a></li>
-                <li class="fondo" >Contactos</li>
+                <li> <a href="./portafolio.html">Portafolio</a> </li>
+                <li> <a href="./acercademi.html">A cerca de mi</a></li>
+                <li class="fondo">Contactos</li>
             </ul>
         </nav>
-   
+
     </header>
     <div>
         <h1 class="titolo">
             Contactos
         </h1>
     </div>
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/R0nHczW4yOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <form action="./popup.html" method="post">
+        <label for="name">Nombre:</label>
+        <input class="input_contacto" type="text" id="name" placeholder="Juan">
+        <label for="surname">Apellido:</label>
+        <input class="input_contacto" type="text" id="surname" placeholder="García">
+        <label for="password">Contraseña:</label>
+        <input class="input_contacto" type="password" id="password">
+        <label for="email">Email:</label>
+        <input class="input_contacto" type="email" name="email" id="email"> <br>
+        <textarea class="input_contacto" placeholder="ingresa un cometario" name="cometario" id="cometario" cols="30"
+            rows="10"></textarea>
+        <input class="botton" type="submit" value="enviar datos">
+
+    </form>
     <footer>
         <ul>
             <li> <a target="_blank" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li> <a target="_blank" href="https://www.facebook.com/joha674"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li> <a target="_blank" href="https://www.instagram.com/johanagarcia25/"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li> <a target="_blank" href="https://www.facebook.com/joha674"><i
+                        class="fa-brands fa-square-facebook"></i></a></li>
+            <li> <a target="_blank" href="https://www.instagram.com/johanagarcia25/"><i
+                        class="fa-brands fa-square-instagram"></i></a></li>
             <li> <a target="_blank" href="https://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a></li>
-           </ul>
+        </ul>
     </footer>
 </body>
+
 </html>
