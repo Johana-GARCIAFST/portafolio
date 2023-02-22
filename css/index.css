@@ -1,146 +1,230 @@
-*{
-margin: 0%;
-padding: 0%;
-list-style-type: none;
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
 }
-header{
+
+header {
     background-color: #2c0202;
-    color: white;  
+    color: white;
 }
-.foto img{
-width: 300px;
-height: 300px;
-border-radius: 40%;
+
+.foto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40%;
 
 }
-ul{
+
+ul {
     margin-top: -6%;
     margin-left: 30%;
 }
-li{
-    display: inline;
+
+li {
+    display: inline-block;
     margin-left: 20%;
     font-size: 1.5em;
-    
+
 }
-li :hover{
+
+li :hover {
     text-shadow: 2px 2px 2px white,
-    2px 2px 5px white,
-    2px 2px 8px white;
+        2px 2px 5px white,
+        2px 2px 8px white;
 }
-body{
+
+body {
     background-color: #2c0202;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
-    }
-a :hover{
-    text-shadow: 2px 2px 2px white,
-    2px 2px 5px white,
-    2px 2px 8px white;
 }
-.titolo{
+
+a :hover {
+    text-shadow: 2px 2px 2px white,
+        2px 2px 5px white,
+        2px 2px 8px white;
+}
+
+.titolo {
     font-size: 3em;
     margin-left: 40%;
     margin-top: 10%;
     color: white;
-    animation: translation-titolo 0.3s ease 0.5s ;
+    animation: translation-titolo 0.3s ease 0.5s;
 }
+
 @keyframes translation-titolo {
-    0%{transform: translateX(-1000px);}
-    100%{transform: translateX(0px)}
-    
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+
 }
-h3{
+
+h3 {
     font-size: 2em;
     margin-left: 60%;
     margin-top: 0%;
     color: white;
-    animation: translation-titolo2 0.3s ease  0.6s ;
+    animation: translation-titolo2 0.3s ease 0.6s;
 }
+
 @keyframes translation-titolo2 {
-    0%{transform: translateX(1000px);}
-    100%{transform: translateX(0px)}
+    0% {
+        transform: translateX(1000px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
 }
-.itemRow{
+
+.itemRow {
     display: flex;
     flex-direction: row;
     margin-left: 0%;
     margin-top: 2%;
-    
+
 }
 
-li img{
+li img {
     height: 150px;
 }
-.itemRow li{
+
+.itemRow li {
     margin: 3%;
     color: white;
-    }
+}
 
- li p{
+li p {
     margin-left: 30%;
- }
- h2{
-    color:white;
+}
+
+h2 {
+    color: white;
     margin-left: 42%;
     padding-top: 30px;
     font-size: 2.5em;
- }
- article p{
-color: white;
- }
- .fondo{
+}
+
+article p {
+    color: white;
+}
+
+.fondo {
     font-weight: bold;
-    text-decoration: underline  ;
- }
- .parrafodemi{
+    text-decoration: underline;
+}
+
+.parrafodemi {
     width: 50vw;
     color: white;
     font-size: 2em;
     text-align: center;
-    margin-left:300px ;
- }
-.habilidades ul{
+    margin-left: 300px;
+}
+
+.habilidades ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
-.seccionPortafolio ul{
+
+.seccionPortafolio ul {
     width: 100vw;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
-.curriculum{
+
+.curriculum {
     font-size: 1.5em;
     position: absolute;
     top: 280px;
     right: 100px;
 }
-form{
+
+form {
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-form label{
+
+form label {
     color: white;
 }
-footer{
+
+footer {
     width: 100vw;
     height: 100px;
 
-   
+
 }
-footer i{
-    margin-top: 50px;
-    font-size: 2em;
-    flex-wrap: wrap;
-   
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+footer i {
+
+    margin-top: 80px;
+    font-size: 2em;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width:600px) {
+    li {
+        display: inline-block;
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 1.5em;
+
+    }
+
+    .foto img {
+        width: 300px;
+        height: 300px;
+        border-radius: 40%;
+        display: grid;
+        margin-left: 10%;
+    }
+
+    .parrafodemi {
+        width: 50vw;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        margin-left: 100px;
+    
+    }
+    li img {
+        height: 67px;
+    }
+    .curriculum {
+        font-size: 1.5em;
+        position: absolute;
+        top: 300px;
+        right: 100px;
+        color:red;
+    }
+    h2 {
+        color: white;
+        margin-left: 20%;
+    }
+  
+}
+
+
+;
